@@ -130,28 +130,28 @@ Curso VARCHAR(50)
 
 
 ## Operaciones CRUD
-### Crear - Método addStudent
+### 1. Crear - Método addStudent
 Utiliza una sentencia SQL preparada para agregar un nuevo estudiante a la base de datos.
 
 Los valores se establecen utilizando métodos como setString y setInt para evitar la inyección de SQL.
 
 executeUpdate ejecuta la actualización en la base de datos.
 
-### Leer - Método displayStudents
+### 2. Leer - Método displayStudents
 Utiliza una sentencia SELECT para obtener todos los estudiantes de la tabla students.
 
 executeQuery ejecuta la consulta y devuelve un conjunto de resultados (ResultSet).
 
 Se utiliza un bucle while para recorrer los resultados y mostrar la información de cada estudiante en la consola.
 
-### Actualizar - Método updateStudent
+### 3. Actualizar - Método updateStudent
 Utiliza una sentencia SQL preparada para actualizar la información de un estudiante existente.
 
 Los valores se establecen de manera segura mediante métodos como setString y setInt.
 
 executeUpdate ejecuta la actualización en la base de datos.
 
-### Eliminar - Método deleteStudent
+### 4. Eliminar - Método deleteStudent
 Utiliza una sentencia SQL preparada para eliminar un estudiante de la base de datos.
 
 El valor del ID se establece de manera segura mediante setInt.
