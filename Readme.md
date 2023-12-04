@@ -158,10 +158,32 @@ El valor del ID se establece de manera segura mediante setInt.
 
 executeUpdate ejecuta la eliminación en la base de datos.
 
+## posibles mejoras
+### 1. Configuración de la Base de Datos:
 
+Considera mover la configuración de la base de datos a un archivo de propiedades o 
+algún otro método más seguro. Esto facilitará la gestión de cambios en la configuración 
+sin modificar el código fuente.
+### 2. Separación de Responsabilidades:
 
+Podrías considerar dividir tu código en clases y métodos más pequeños para seguir el 
+principio de responsabilidad única. Esto hará que tu código sea más fácil de entender 
+y mantener.
 
+### 3. Mensajes de Usuario:
 
+Considera externalizar mensajes de usuario a un archivo de propiedades o recursos para 
+facilitar la internacionalización.
+
+### 4. Seguridad SQL:
+
+El código actual utiliza sentencias preparadas, lo cual es excelente para prevenir la 
+inyección de SQL. Continúa usando este enfoque en todas las consultas.
+
+### 5. Validación de Entrada del Usuario:
+
+Agrega validación de entrada del usuario para asegurarte de que los valores 
+ingresados sean válidos antes de procesarlos.
 
 
 ## Fuentes Consultadas para este proyecto:
